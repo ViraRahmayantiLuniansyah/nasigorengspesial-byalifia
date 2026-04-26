@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Warung Nasi Goreng Spesial</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">🍳 Warung Spesial</div>
+  <ul class="nav-links">
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#bumbu">Bumbu</a></li>
+    <li><a href="#pesan">Pesan</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+ 
+  <!-- Spice floating dots -->
+  <div class="spice-dot" style="width:6px;height:6px;background:var(--golden);top:20%;left:15%;animation-delay:0s;"></div>
+  <div class="spice-dot" style="width:4px;height:4px;background:var(--red-chili);top:35%;left:8%;animation-delay:1.5s;"></div>
+  <div class="spice-dot" style="width:8px;height:8px;background:var(--brown-gold);top:60%;left:20%;animation-delay:3s;"></div>
+  <div class="spice-dot" style="width:5px;height:5px;background:var(--golden);top:25%;right:12%;animation-delay:0.8s;"></div>
+  <div class="spice-dot" style="width:7px;height:7px;background:var(--red-chili);top:55%;right:18%;animation-delay:2.2s;"></div>
+  <div class="spice-dot" style="width:4px;height:4px;background:var(--green-onion);top:70%;right:10%;animation-delay:4s;"></div>
+ 
+  <div class="deco-line top"></div>
+ 
+  <p class="hero-badge">✦ Authentic Indonesian Street Food ✦</p>
+ 
+  <h1 class="hero-title">
+    Nasi Goreng
+    <span>Warung Spesial</span>
+  </h1>
+ 
+  <p class="hero-subtitle">
+    Cita rasa autentik nasi goreng yang dimasak dengan api besar, bumbu rempah pilihan, dan penuh kenangan masa kecil yang selalu dirindukan.
+  </p>
+ 
+  <div class="hero-cta">
+    <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+    <a href="#pesan" class="btn btn-outline">Pesan Sekarang</a>
+  </div>
+ 
+  <div class="deco-line bottom"></div>
+ 
+  <div class="steam">
+    <div class="steam-ring"></div>
+    <div class="steam-ring"></div>
+    <div class="steam-ring"></div>
+  </div>
+ 
+  <div class="scroll-ind">
+    <span>Scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+ 
+<!-- ABOUT -->
+<section id="about">
+  <div class="about">
+    <!-- SVG Plate Illustration -->
+    <div class="about-visual reveal">
+      <svg class="plate-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <!-- Plate shadow -->
+        <ellipse cx="200" cy="370" rx="160" ry="20" fill="rgba(0,0,0,0.4)"/>
+        <!-- Plate -->
+        <circle cx="200" cy="200" r="175" fill="#3E2010" stroke="#6B3A1F" stroke-width="3"/>
+        <circle cx="200" cy="200" r="168" fill="none" stroke="rgba(196,125,58,0.3)" stroke-width="1"/>
+        <!-- Rice base -->
+        <ellipse cx="200" cy="210" rx="140" ry="110" fill="#8B4F2C"/>
+        <!-- Rice texture bumps -->
+        <ellipse cx="170" cy="185" rx="8" ry="5" fill="#A0623A" opacity="0.7"/>
+        <ellipse cx="195" cy="178" rx="6" ry="4" fill="#9A5B35" opacity="0.6"/>
+        <ellipse cx="220" cy="182" rx="7" ry="5" fill="#A0623A" opacity="0.7"/>
+        <ellipse cx="155" cy="198" rx="5" ry="4" fill="#9A5B35" opacity="0.5"/>
+        <ellipse cx="240" cy="195" rx="6" ry="4" fill="#A0623A" opacity="0.6"/>
+        <ellipse cx="175" cy="208" rx="9" ry="5" fill="#B06A3E" opacity="0.6"/>
+        <ellipse cx="210" cy="200" rx="8" ry="5" fill="#A05830" opacity="0.7"/>
+        <ellipse cx="230" cy="212" rx="7" ry="4" fill="#9A5532" opacity="0.6"/>
+        <ellipse cx="158" cy="215" rx="6" ry="4" fill="#B06A3E" opacity="0.5"/>
+        <ellipse cx="190" cy="220" rx="10" ry="6" fill="#C07040" opacity="0.5"/>
+        <ellipse cx="218" cy="225" rx="8" ry="5" fill="#A85E38" opacity="0.6"/>
+        <ellipse cx="245" cy="218" rx="6" ry="4" fill="#9A5532" opacity="0.7"/>
+        <ellipse cx="162" cy="228" rx="7" ry="4" fill="#B06A3E" opacity="0.5"/>
+        <ellipse cx="200" cy="235" rx="12" ry="6" fill="#C47D45" opacity="0.4"/>
+        <!-- Egg (telur mata sapi) -->
+        <ellipse cx="200" cy="175" rx="38" ry="28" fill="#FFF9E6" opacity="0.95"/>
+        <circle cx="200" cy="173" r="18" fill="#F5A623"/>
+        <circle cx="195" cy="168" r="5" fill="rgba(255,255,255,0.4)"/>
+        <!-- Kecap/dark soy streaks -->
+        <path d="M165,210 Q175,205 185,215 Q195,225 210,218" stroke="#2C1A0E" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+        <path d="M220,220 Q228,214 235,222" stroke="#2C1A0E" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+        <!-- Chili slices (red) -->
+        <ellipse cx="160" cy="190" rx="10" ry="5" fill="#C0392B" transform="rotate(-30,160,190)"/>
+        <ellipse cx="245" cy="188" rx="10" ry="5" fill="#C0392B" transform="rotate(25,245,188)"/>
+        <ellipse cx="175" cy="240" rx="8" ry="4" fill="#E74C3C" transform="rotate(-15,175,240)"/>
+        <!-- Green onion sprinkles -->
+        <line x1="168" y1="202" x2="178" y2="198" stroke="#6B8E23" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="225" y1="205" x2="232" y2="200" stroke="#6B8E23" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="190" y1="242" x2="198" y2="238" stroke="#6B8E23" stroke-width="2" stroke-linecap="round"/>
+        <line x1="215" y1="238" x2="222" y2="234" stroke="#6B8E23" stroke-width="2" stroke-linecap="round"/>
+        <!-- Shrimp -->
+        <path d="M248,240 Q260,230 256,218 Q252,208 244,212" stroke="#F08080" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <circle cx="244" cy="212" r="4" fill="#E07070"/>
+        <!-- Kerupuk (cracker) on side -->
+        <path d="M270,255 Q290,245 295,265 Q300,285 280,288 Q260,290 255,272 Z" fill="rgba(245,230,200,0.7)" stroke="rgba(196,125,58,0.4)" stroke-width="1"/>
+        <!-- Plate rim details -->
+        <circle cx="200" cy="200" r="175" fill="none" stroke="rgba(196,125,58,0.4)" stroke-width="1.5" stroke-dasharray="4 8"/>
+      </svg>
+    </div>
+ 
+    <div class="about-text reveal">
+      <p class="section-label">✦ Cerita Kami ✦</p>
+      <h2 class="section-title">Dimasak dengan <em>cinta</em> sejak 1987</h2>
+      <p style="margin-top:24px;">
+        Warung kami berdiri di pinggir jalan kecil Bogor, diwariskan dari generasi ke generasi. Nasi goreng kami menggunakan resep rahasia yang dijaga ketat. perpaduan kecap, terasi, bawang putih, dan api yang tepat.
+      </p>
+      <p>
+        Setiap piring yang keluar dari wajan kami adalah sebuah karya. Nasi yang panas mengepul, telur mata sapi yang sempurna, dan aroma harum yang membuat perut langsung keroncongan.
+      </p>
+      <div class="about-stats">
+        <div class="stat">
+          <div class="stat-num" data-target="2019">0</div>
+          <div class="stat-label">Tahun Berdiri</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-target="100">0</div>
+          <div class="stat-label">Porsi / Hari</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-target="12">0</div>
+          <div class="stat-label">Varian Menu</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- DIVIDER -->
+<div class="divider">
+  <div class="divider-line"></div>
+  <div class="divider-icon">🌶</div>
+  <div class="divider-line"></div>
+</div>
+ 
+<!-- MENU -->
+<section id="menu" class="menu-section">
+  <div class="menu-header reveal">
+    <p class="section-label">✦ Pilihan Menu ✦</p>
+    <h2 class="section-title">Menu <em>Unggulan</em> Kami</h2>
+  </div>
+ 
+  <div class="menu-grid">
+    <div class="menu-card reveal">
+      <span class="menu-card-icon">🍳</span>
+      <div class="menu-card-name">Nasi Goreng Spesial</div>
+      <div class="menu-card-desc">Nasi goreng klasik dengan telur mata sapi, ayam suwir, udang, dan taburan bawang goreng renyah.</div>
+      <div class="menu-card-footer">
+        <div class="menu-price">Rp 22.000</div>
+        <div class="menu-spicy"><span class="chili">🌶</span><span class="chili">🌶</span><span class="chili">🌶</span></div>
+      </div>
+    </div>
+ 
+    <div class="menu-card reveal">
+      <span class="menu-card-icon">🥚</span>
+      <div class="menu-card-name">Nasi Goreng Kampung</div>
+      <div class="menu-card-desc">Resep sederhana ala kampung — telur orak-arik, teri medan, dan sambal bawang yang nendang.</div>
+      <div class="menu-card-footer">
+        <div class="menu-price">Rp 17.000</div>
+        <div class="menu-spicy"><span class="chili">🌶</span><span class="chili">🌶</span></div>
+      </div>
+    </div>
+ 
+    <div class="menu-card reveal">
+      <span class="menu-card-icon">🦐</span>
+      <div class="menu-card-name">Nasi Goreng Seafood</div>
+      <div class="menu-card-desc">Perpaduan udang segar, cumi, dan kerang dengan bumbu hitam yang kaya rasa laut.</div>
+      <div class="menu-card-footer">
+        <div class="menu-price">Rp 32.000</div>
+        <div class="menu-spicy"><span class="chili">🌶</span><span class="chili">🌶</span></div>
+      </div>
+    </div>
+ 
+    <div class="menu-card reveal">
+      <span class="menu-card-icon">🌶</span>
+      <div class="menu-card-name">Nasi Goreng Pedas Gila</div>
+      <div class="menu-card-desc">Untuk jiwa-jiwa pemberani. Cabai rawit 10 biji, sambal terasi, dan keberanian ekstra.</div>
+      <div class="menu-card-footer">
+        <div class="menu-price">Rp 24.000</div>
+        <div class="menu-spicy"><span class="chili">🌶</span><span class="chili">🌶</span><span class="chili">🌶</span><span class="chili">🌶</span></div>
+      </div>
+    </div>
+ 
+    <div class="menu-card reveal">
+      <span class="menu-card-icon">🍗</span>
+      <div class="menu-card-name">Nasi Goreng Ayam Bakar</div>
+      <div class="menu-card-desc">Nasi goreng dengan potongan ayam bakar bumbu kecap manis yang karamel dan harum.</div>
+      <div class="menu-card-footer">
+        <div class="menu-price">Rp 28.000</div>
+        <div class="menu-spicy"><span class="chili">🌶</span><span class="chili">🌶</span></div>
+      </div>
+    </div>
+ 
+    <div class="menu-card reveal">
+      <span class="menu-card-icon">🥦</span>
+      <div class="menu-card-name">Nasi Goreng Sayur</div>
+      <div class="menu-card-desc">Pilihan sehat dengan brokoli, wortel, jagung, dan tumisan bumbu ringan yang tetap lezat.</div>
+      <div class="menu-card-footer">
+        <div class="menu-price">Rp 18.000</div>
+        <div class="menu-spicy"><span class="chili">🌶</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- DIVIDER -->
+<div class="divider">
+  <div class="divider-line"></div>
+  <div class="divider-icon">🧄</div>
+  <div class="divider-line"></div>
+</div>
+ 
+<!-- SPICES / BUMBU -->
+<section id="bumbu" class="spices-section">
+  <div class="spices-inner">
+    <div class="spices-header reveal">
+      <p class="section-label">✦ Rahasia Rasa ✦</p>
+      <h2 class="section-title">Bumbu <em>Pilihan</em> Kami</h2>
+      <p style="margin-top:16px; color:rgba(245,230,200,0.65); max-width:480px; margin-inline:auto; line-height:1.8; font-size:0.95rem;">
+        Setiap bumbu dipilih dengan cermat dari pasar tradisional, segar setiap pagi, untuk menjaga kualitas rasa yang konsisten.
+      </p>
+    </div>
+ 
+    <div class="spices-grid">
+      <div class="spice-item reveal"><span class="spice-emoji">🧄</span><div class="spice-name">Bawang Putih</div><div class="spice-note">Aroma & dasar rasa</div></div>
+      <div class="spice-item reveal"><span class="spice-emoji">🧅</span><div class="spice-name">Bawang Merah</div><div class="spice-note">Manis & gurih</div></div>
+      <div class="spice-item reveal"><span class="spice-emoji">🌶</span><div class="spice-name">Cabai Rawit</div><div class="spice-note">Pedas membakar</div></div>
+      <div class="spice-item reveal"><span class="spice-emoji">🫙</span><div class="spice-name">Terasi Bakar</div><div class="spice-note">Umami khas pesisir</div></div>
+      <div class="spice-item reveal"><span class="spice-emoji">🍯</span><div class="spice-name">Kecap Manis</div><div class="spice-note">Warna & karamel</div></div>
+      <div class="spice-item reveal"><span class="spice-emoji">🌿</span><div class="spice-name">Daun Bawang</div><div class="spice-note">Segar & wangi</div></div>
+      <div class="spice-item reveal"><span class="spice-emoji">🫘</span><div class="spice-name">Bawang Goreng</div><div class="spice-note">Renyah di atas</div></div>
+      <div class="spice-item reveal"><span class="spice-emoji">🥚</span><div class="spice-name">Telur Kampung</div><div class="spice-note">Kuning emas sempurna</div></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="testi-header reveal">
+    <p class="section-label">✦ Kata Mereka ✦</p>
+    <h2 class="section-title">Pelanggan <em>Setia</em> Kami</h2>
+  </div>
+ 
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <p class="testi-text">Nasi gorengnya beda banget dari yang lain! Aromanya bikin ngiler dari jauh, rasanya pas banget antara pedas, manis, dan gurih. Sudah langganan 5 tahun!</p>
+      <div class="testi-author">
+        <div class="testi-avatar">😊</div>
+        <div>
+          <div class="testi-name">Azril</div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="testi-card reveal">
+      <p class="testi-text">Paling suka nasi goreng seafood-nya! Udangnya segar, tidak amis, dan bumbunya meresap sempurna. Selalu jadi pilihan kalau makan di sini.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">🙋</div>
+        <div>
+          <div class="testi-name">Siti Alifia</div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="testi-card reveal">
+      <p class="testi-text">Nasi goreng pedas gilanya beneran gila! Tapi justru bikin ketagihan terus. Pelayanannya ramah dan tempatnya nyaman. Recommended banget!</p>
+      <div class="testi-author">
+        <div class="testi-avatar">🔥</div>
+        <div>
+          <div class="testi-name">Vira Rahmayanti</div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ORDER CTA -->
+<section id="pesan" class="order-section">
+  <div class="order-bg"></div>
+  <div class="order-inner reveal">
+    <p class="section-label">✦ Siap Memesan? ✦</p>
+    <h2 class="order-title">Pesan <span>Sekarang</span>,<br/>Nikmati Hari Ini</h2>
+    <p class="order-desc">Buka setiap hari mulai pukul 10 pagi hingga 10 malam. Tersedia layanan makan di tempat, take away, dan pesan antar melalui aplikasi favorit Anda.</p>
+    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+      <a href="https://wa.me/628977314920" class="btn btn-primary">📞 Hubungi WhatsApp</a>
+    </div>
+    <p style="margin-top:32px; color:rgba(245,230,200,0.4); font-size:0.82rem; letter-spacing:0.15em;">
+      Jl. Raya Bogor No. 88, Bogor Tengah · Buka 10:00 – 22:00
+    </p>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">🍳 Warung Spesial</div>
+  <div class="footer-sub">Nasi Goreng Authentic Since 1987</div>
+  <div class="footer-info">
+    Jl. Raya Bogor No. 88, Bogor Tengah<br/>
+    📞 0897-7314-920 · ✉ warungspesial@email.com<br/>
+    Senin–Minggu · 10:00 – 22:00 WIB
+  </div>
+  <div class="footer-bottom">© 2025 Warung Nasi Goreng Spesial · By Siti Alifia</div>
+</footer>
+
+
+
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
