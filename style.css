@@ -607,4 +607,38 @@
       0%,100% { transform: rotate(45deg) translateY(0); }
       50%      { transform: rotate(45deg) translateY(5px); }
     }
-  
+    /* Hamburger default (desktop disembunyiin) */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: var(--golden);
+  cursor: pointer;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 768px) {
+
+  /* tampilkan hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* sembunyikan menu awalnya */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(44, 26, 14, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 16px;
+    width: 180px;
+  }
+
+  /* kalau aktif */
+  .nav-links.active {
+    display: flex;
+  }
+}
